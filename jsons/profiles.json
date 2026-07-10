@@ -1,0 +1,442 @@
+{
+	"Matthew Belanger": {
+		"branch": "Community Outreach",
+		"role": "chair",
+		"active": true,
+		"genius": [
+			"Galvanizing",
+			"Wonder"
+		],
+		"competency": [
+			"Enablement",
+			"Discernment"
+		],
+		"frustration": [
+			"Invention",
+			"Tenacity"
+		]
+	},
+	"Clara Mati": {
+		"branch": "Community Outreach",
+		"role": "team",
+		"active": true,
+		"genius": [
+			"Enablement",
+			"Tenacity"
+		],
+		"competency": [
+			"Invention",
+			"Galvanizing"
+		],
+		"frustration": [
+			"Wonder",
+			"Discernment"
+		]
+	},
+	"Damian Cincurak": {
+		"branch": "Bible Study",
+		"role": "team",
+		"active": true,
+		"genius": [
+			"Enablement",
+			"Galvanizing"
+		],
+		"competency": [
+			"Wonder",
+			"Discernment"
+		],
+		"frustration": [
+			"Tenacity",
+			"Invention"
+		]
+	},
+	"Emily Kowalsky": {
+		"branch": "Theology on Tap",
+		"role": "team",
+		"active": false,
+		"genius": [
+			"Enablement",
+			"Tenacity"
+		],
+		"competency": [
+			"Wonder",
+			"Discernment"
+		],
+		"frustration": [
+			"Galvanizing",
+			"Invention"
+		]
+	},
+	"Jenna Goldsack": {
+		"branch": "Theology on Tap",
+		"role": "team",
+		"active": false,
+		"genius": [
+			"Enablement",
+			"Wonder"
+		],
+		"competency": [
+			"Discernment",
+			"Invention"
+		],
+		"frustration": [
+			"Galvanizing",
+			"Tenacity"
+		]
+	},
+	"Joshua Rodrigo": {
+		"genius": [
+			"Wonder",
+			"Tenacity"
+		],
+		"competency": [
+			"Enablement",
+			"Discernment"
+		],
+		"frustration": [
+			"Invention",
+			"Galvanizing"
+		]
+	},
+	"Julia Giammaria": {
+		"branch": "Theology on Tap",
+		"role": "team",
+		"active": false,
+		"genius": [
+			"Galvanizing",
+			"Invention"
+		],
+		"competency": [
+			"Wonder",
+			"Enablement"
+		],
+		"frustration": [
+			"Tenacity",
+			"Discernment"
+		]
+	},
+	"Krista Mati": {
+		"branch": "Social Media",
+		"role": "team",
+		"active": true,
+		"genius": [
+			"Tenacity",
+			"Enablement"
+		],
+		"competency": [
+			"Wonder",
+			"Invention"
+		],
+		"frustration": [
+			"Discernment",
+			"Galvanizing"
+		]
+	},
+	"Nicholas Orsik": {
+		"genius": [
+			"Tenacity",
+			"Wonder"
+		],
+		"competency": [
+			"Invention",
+			"Discernment"
+		],
+		"frustration": [
+			"Enablement",
+			"Galvanizing"
+		]
+	},
+	"Sabin James": {
+		"branch": "Bible Study",
+		"role": "team",
+		"active": true,
+		"genius": [
+			"Galvanizing",
+			"Tenacity"
+		],
+		"competency": [
+			"Wonder",
+			"Enablement"
+		],
+		"frustration": [
+			"Invention",
+			"Discernment"
+		]
+	},
+	"Tristan Wiley": {
+		"branch": "Theology on Tap",
+		"role": "team",
+		"active": false,
+		"genius": [
+			"Invention",
+			"Tenacity"
+		],
+		"competency": [
+			"Enablement",
+			"Galvanizing"
+		],
+		"frustration": [
+			"Wonder",
+			"Discernment"
+		]
+	},
+	"Zoe G": {
+		"genius": [
+			"Wonder",
+			"Invention"
+		],
+		"competency": [
+			"Discernment",
+			"Galvanizing"
+		],
+		"frustration": [
+			"Enablement",
+			"Tenacity"
+		]
+	},
+	"Bashar Zori": {
+		"genius": [
+			"Wonder",
+			"Discernment"
+		],
+		"competency": [
+			"Invention",
+			"Tenacity"
+		],
+		"frustration": [
+			"Galvanizing",
+			"Enablement"
+		]
+	},
+	"Brandon Benoit": {
+		"branch": "Theology on Tap",
+		"role": "team",
+		"active": true,
+		"genius": [
+			"Tenacity",
+			"Enablement"
+		],
+		"competency": [
+			"Wonder",
+			"Invention"
+		],
+		"frustration": [
+			"Galvanizing",
+			"Discernment"
+		]
+	},
+	"Carolyne A": {
+		"genius": [
+			"Tenacity",
+			"Wonder"
+		],
+		"competency": [
+			"Invention",
+			"Discernment"
+		],
+		"frustration": [
+			"Galvanizing",
+			"Enablement"
+		]
+	},
+	"Chelsea Thachuk": {
+		"genius": [
+			"Enablement",
+			"Wonder"
+		],
+		"competency": [
+			"Discernment",
+			"Tenacity"
+		],
+		"frustration": [
+			"Invention",
+			"Galvanizing"
+		]
+	},
+	"Dana Cavers": {
+		"branch": "Theology on Tap",
+		"role": "chair",
+		"active": true,
+		"genius": [
+			"Invention",
+			"Galvanizing"
+		],
+		"competency": [
+			"Enablement",
+			"Tenacity"
+		],
+		"frustration": [
+			"Wonder",
+			"Discernment"
+		]
+	},
+	"Domenic Thachuk": {
+		"branch": "Community Outreach",
+		"role": "chair",
+		"active": true,
+		"genius": [
+			"Wonder",
+			"Discernment"
+		],
+		"competency": [
+			"Enablement",
+			"Invention"
+		],
+		"frustration": [
+			"Tenacity",
+			"Galvanizing"
+		]
+	},
+	"Felicity Cincurak": {
+		"branch": "Bible Study",
+		"role": "chair",
+		"active": true,
+		"genius": [
+			"Enablement",
+			"Wonder"
+		],
+		"competency": [
+			"Discernment",
+			"Tenacity"
+		],
+		"frustration": [
+			"Invention",
+			"Galvanizing"
+		]
+	},
+	"Isabella B": {
+		"genius": [
+			"Invention",
+			"Enablement"
+		],
+		"competency": [
+			"Galvanizing",
+			"Tenacity"
+		],
+		"frustration": [
+			"Discernment",
+			"Wonder"
+		]
+	},
+	"Jaclyn Sleiman": {
+		"genius": [
+			"Enablement",
+			"Tenacity"
+		],
+		"competency": [
+			"Invention",
+			"Discernment"
+		],
+		"frustration": [
+			"Wonder",
+			"Galvanizing"
+		]
+	},
+	"Jessica Rodrigo": {
+		"genius": [
+			"Wonder",
+			"Tenacity"
+		],
+		"competency": [
+			"Invention",
+			"Enablement"
+		],
+		"frustration": [
+			"Discernment",
+			"Galvanizing"
+		]
+	},
+	"Katie D'Hondt": {
+		"branch": "Community Outreach",
+		"role": "team",
+		"active": false,
+		"genius": [
+			"Tenacity",
+			"Wonder"
+		],
+		"competency": [
+			"Discernment",
+			"Enablement"
+		],
+		"frustration": [
+			"Invention",
+			"Galvanizing"
+		]
+	},
+	"Katie Jacobs": {
+		"genius": [
+			"Galvanizing",
+			"Enablement"
+		],
+		"competency": [
+			"Tenacity",
+			"Wonder"
+		],
+		"frustration": [
+			"Invention",
+			"Discernment"
+		]
+	},
+	"Laurette Witteveen": {
+		"genius": [
+			"Enablement",
+			"Tenacity"
+		],
+		"competency": [
+			"Galvanizing",
+			"Wonder"
+		],
+		"frustration": [
+			"Invention",
+			"Discernment"
+		]
+	},
+	"Lynora Kajoja": {
+		"genius": [
+			"Enablement",
+			"Wonder"
+		],
+		"competency": [
+			"Invention",
+			"Discernment"
+		],
+		"frustration": [
+			"Tenacity",
+			"Galvanizing"
+		]
+	},
+	"Mitchell Witteveen": {
+		"branch": "Bible Study",
+		"role": "team",
+		"active": true,
+		"genius": [
+			"Wonder",
+			"Tenacity"
+		],
+		"competency": [
+			"Galvanizing",
+			"Discernment"
+		],
+		"frustration": [
+			"Invention",
+			"Enablement"
+		]
+	},
+	"Monica Plante": {
+		"branch": "Theology on Tap",
+		"role": "team",
+		"active": true,
+		"genius": [
+			"Enablement",
+			"Galvanizing"
+		],
+		"competency": [
+			"Invention",
+			"Wonder"
+		],
+		"frustration": [
+			"Discernment",
+			"Tenacity"
+		]
+	}
+}
