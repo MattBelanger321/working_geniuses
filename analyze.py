@@ -34,7 +34,10 @@ FILTERS = {
     "male",
     "female",
     "male_role",
-    "female_role"
+    "female_role",
+    "theology_branch",
+    "bible_study_branch",
+    "community_outreach_branch"
 }
 
 
@@ -73,6 +76,12 @@ def should_filter_profile(profile, filter):
         return not (profile.get("male", False) and profile.get("role") is not None)
     elif filter == "female_role":
         return not (not profile.get("male", True) and profile  .get("role") is not None)
+    elif filter == "theology_branch":
+        return profile.get("branch") != "Theology on Tap"
+    elif filter == "bible_study_branch":
+        return profile.get("branch") != "Bible Study"
+    elif filter == "community_outreach_branch":
+        return profile.get("branch") != "Community Outreach"
     else:
         raise ValueError(f"Unknown filter: {filter}")
 
