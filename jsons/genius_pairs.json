@@ -1,0 +1,619 @@
+[
+  {
+    "pairing": "WI",
+    "title": "The Creative Dreamer",
+    "geniuses": [
+      "Wonder",
+      "Invention"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Curious and idealistic.",
+          "Often asks big questions and enjoys coming up with new ideas.",
+          "Comfortable with their head in the clouds.",
+          "People with this pairing get joy and energy from dreaming up possibilities.",
+          "They are always looking to the future.",
+          "They’re passionate about new ideas that break through boundaries."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because practicality and focus are not their top priorities, it may lead to some stress or chaos for those around them who are more focused on getting things done."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Consideration. They want people to genuinely consider what they are wondering about and for their questions to be heard. “Hey, that’s a great question.”",
+          "Freedom. They want the freedom to create and invent without constraints or restrictions."
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Being dismissed. They dislike hearing, “Who cares!?” or “We don’t have time to stop and think about that.”",
+          "Constraint. They dislike restrictive parameters or being forced to stay 'inside the box.'"
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "WD",
+    "title": "The Contemplative Counselor",
+    "geniuses": [
+      "Wonder",
+      "Discernment"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Reflective and insightful.",
+          "Thoughtfully approaches problems and enjoys giving sound advice.",
+          "Takes time to carefully evaluate ideas and situations.",
+          "People with this pairing get joy and energy in using their intuition and instincts to assess ideas and plans.",
+          "They’re observant thinkers, diving deep into their thoughts and expressing their insights with impactful words.",
+          "They enjoy offering thoughtful feedback."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re inclined to see the nuances in situations, they sometimes hold back from being certain or overly confident in their judgments."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Consideration. They want people to genuinely consider what they are wondering about and for their questions to be heard. “Hey, that’s a great question.”",
+          "Trust. They want you to trust their judgment, instincts, and assessment of things."
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Being dismissed. They dislike hearing, “Who cares!?” or “We don’t have time to stop and think about that.”",
+          "“Prove it.” They dislike having to argue for people to believe what their gut is telling them."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "WG",
+    "title": "The Philosophical Motivator",
+    "geniuses": [
+      "Wonder",
+      "Galvanizing"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Enthusiastic and reflective.",
+          "Enjoys exploring possibilities and rallying others around them.",
+          "Possesses a unique combination of eagerness and thoughtful reflection.",
+          "People with this pairing get joy and energy from pondering the potential in the world around them and communicating their excitement to others.",
+          "They are idealistic and full of passion.",
+          "They exhibit an interesting blend of prudence and enthusiasm."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they swing between action and caution, they can seem impulsive and unpredictable."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Consideration. They want people to genuinely consider what they are wondering about and for their questions to be heard. “Hey, that’s a great question.”",
+          "Reaction. They want engagement, and confirmation that the thing they are advocating for is real and worthwhile."
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Being dismissed. They dislike hearing, “Who cares!?” or “We don’t have time to stop and think about that.”",
+          "Apathy. They hate it when no one responds to their calls to action, or when their enthusiasm is met with silence."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "WE",
+    "title": "The Idealistic Supporter",
+    "geniuses": [
+      "Wonder",
+      "Enablement"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Reflective and considerate.",
+          "Thoughtfully contributes without demanding attention.",
+          "Enjoys providing others with meaningful support.",
+          "People with this pairing get joy and energy in backing causes that align with their idealistic values and sense of belonging.",
+          "They are loyal, selfless, and modest about their abilities.",
+          "They are valuable team members."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re pleasers and deep thinkers, they might be hesitant to take the lead or initiate change and often prefer to let others make the first move."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Consideration. They want people to genuinely consider what they are wondering about and for their questions to be heard. “Hey, that’s a great question.”",
+          "Appreciation. They want to be acknowledged for their inherent value, but they are not necessarily seeking recognition, attention, or credit. “That made a big difference. You really helped.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Being dismissed. They dislike hearing, “Who cares!?” or “We don’t have time to stop and think about that.”",
+          "Being overlooked. They dislike it when their efforts are taken for granted—when you don’t acknowledge that they have helped, or if you ignore the impact of their work."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "WT",
+    "title": "The Careful Implementer",
+    "geniuses": [
+      "Wonder",
+      "Tenacity"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Inquisitive and practical.",
+          "Spends time reflecting before taking action.",
+          "Possesses a rare combination of wanting to get things done and slowing down to consider things deeply.",
+          "People with this pairing find joy and energy in getting things done thoroughly and reliably, as long as they understand the ‘why’ behind what they’re doing.",
+          "They are a fascinating blend of practicality and curiosity.",
+          "They are simultaneously reflective and action-oriented."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because their talents are at opposite ends of the work process (Wonder and Tenacity), they might experience moments of angst towards the end of a project.",
+          "Because of this, they often feel an overwhelming need to slow down and go back up to Wonder."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Consideration. They want people to genuinely consider what they are wondering about and for their questions to be heard. “Hey, that’s a great question.”",
+          "Clarity. They want deadlines and parameters. “Tell me exactly what you need, then let me do what is necessary to complete the task.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Being dismissed. They dislike hearing, “Who cares!?” or “We don’t have time to stop and think about that.”",
+          "Ambiguity. They dislike unclear standards and directions, or expectations that suddenly change."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "ID",
+    "title": "The Discriminating Ideator",
+    "geniuses": [
+      "Invention",
+      "Discernment"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Creative and intuitive.",
+          "Enjoys coming up with ideas from scratch.",
+          "Uses good judgment to find unique solutions to problems.",
+          "People with this pairing get joy and energy when using their intuition and instinct to create new and original ideas.",
+          "They excel in integrative thinking and pattern recognition, leaning more on intuition and creativity than data or expertise.",
+          "They’re effective in problem-solving and coming up with practical solutions with a high success rate."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re so effectively innovative, they might seem a bit impatient or overly confident when they receive pushback around their ideas, and they tend to lose interest in the work once the initial inventive phase is done."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Freedom. They want the freedom to create and invent without constraints or restrictions.",
+          "Trust. They want you to trust their judgment, instincts, and assessment of things."
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Constraint. They dislike restrictive parameters or being forced to stay ‘inside the box.’",
+          "“Prove it.” They dislike having to argue for people to believe what their gut is telling them."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "IG",
+    "title": "The Evangelizing Innovator",
+    "geniuses": [
+      "Invention",
+      "Galvanizing"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Creative and enthusiastic.",
+          "Enjoys promoting new ideas and convincing others to get involved.",
+          "Easily excited.",
+          "People with this pairing get joy and energy when they’re brainstorming and convincing others of the merit of their ideas.",
+          "They’re full of enthusiasm and not easily thrown off by the first bit of resistance.",
+          "They thrive on the challenge of getting others on board."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they are so excited to hit the ground running, they may come across as a bit over- the-top, careless or even disingenuous."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Freedom. They want the freedom to create and invent without constraints or restrictions.",
+          "Reaction. They want engagement, and confirmation that the thing they are advocating for is real and worthwhile."
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Constraint. They dislike restrictive parameters or being forced to stay ‘inside the box.’",
+          "Apathy. They hate it when no one responds to their calls to action, or when their enthusiasm is met with silence."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "IE",
+    "title": "The Adaptable Designer",
+    "geniuses": [
+      "Invention",
+      "Enablement"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Creative and flexible.",
+          "Enjoys generating new ideas and responding to the needs of others.",
+          "Easily adapts to feedback and new information.",
+          "People with this pairing get joy and energy creating new solutions that perfectly fit the needs of others.",
+          "They’ve got an amazing skill of blending their passion for inventing with the ability to tune in to what people really want.",
+          "They are creative, flexible, and open to feedback."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re so eager to make others happy, they sometimes rush to accommodate without pushing or properly advocating for their own ideas."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Freedom. They want the freedom to create and invent without constraints or restrictions.",
+          "Appreciation. They want to be acknowledged for their inherent value, but they are not necessarily seeking recognition, attention, or credit. “That made a big difference. You really helped.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Constraint. They dislike restrictive parameters or being forced to stay ‘inside the box.’",
+          "Being overlooked. They dislike it when their efforts are taken for granted—when you don’t acknowledge that they have helped, or if you ignore the impact of their work."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "IT",
+    "title": "The Methodical Architect",
+    "geniuses": [
+      "Invention",
+      "Tenacity"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Innovative and practical.",
+          "Enjoys designing and implementing specific solutions to problems.",
+          "Places high value on detail and quality.",
+          "People with this pairing get joy and energy when they’re crafting practical solutions based on ingenuity, reason, and precision.",
+          "They work in a steady and reliable way when generating new ideas.",
+          "They’re focused on ensuring that a plan or project is logistically feasible."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "In their quest for a viable solution, they might occasionally miss the subtleties or nuances of a situation or overlook the needs of others."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Freedom. They want the freedom to create and invent without constraints or restrictions.",
+          "Clarity. They want deadlines and parameters. “Tell me exactly what you need, then let me do what is necessary to complete the task.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Constraint. They dislike restrictive parameters or being forced to stay ‘inside the box.’",
+          "Ambiguity. They dislike unclear standards and directions, or expectations that suddenly change."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "DG",
+    "title": "The Intuitive Activator",
+    "geniuses": [
+      "Discernment",
+      "Galvanizing"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Decisive and confident.",
+          "Enjoys evaluating situations, identifying solutions, and motivating people to act.",
+          "Instinctively rallies others.",
+          "People with this pairing get joy and energy from trusting their instincts as they evaluate ideas and situations.",
+          "They’re natural decision-makers, quickly figuring out the right course of action.",
+          "They make fast and surprisingly accurate assessments, and they’re good at rallying others to get on board with their bias for action."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re so confident and ready to charge ahead, they can be overly bold in their declarations and may seem impatient or dismissive when it comes to figuring out the details required for implementation."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Trust. They want you to trust their judgment, instincts, and assessment of things.",
+          "Reaction. They want engagement, and confirmation that the thing they are advocating for is real and worthwhile."
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "“Prove it.” They dislike having to argue for people to believe what their gut is telling them.",
+          "Apathy. They hate it when no one responds to their calls to action, or when their enthusiasm is met with silence."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "DE",
+    "title": "The Insightful Collaborator",
+    "geniuses": [
+      "Discernment",
+      "Enablement"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Perceptive and helpful.",
+          "Enjoys evaluating situations and sharing insights.",
+          "Uses intuition to provide others with sound advice and assistance in just the right way.",
+          "People with this pairing get joy and energy in offering others perceptive and empathetic help based on their instincts and intuition.",
+          "They’re always ready with exceptional and timely advice in a selfless manner.",
+          "They are valuable team players."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they are so considerate, they might be hesitant and deferential to others when they sense resistance around their insights."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Trust. They want you to trust their judgment, instincts, and assessment of things.",
+          "Appreciation. They want to be acknowledged for their inherent value, but they are not necessarily seeking recognition, attention, or credit. “That made a big difference. You really helped.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "“Prove it.” They dislike having to argue for people to believe what their gut is telling them.",
+          "Being overlooked. They dislike it when their efforts are taken for granted—when you don’t acknowledge that they have helped, or if you ignore the impact of their work."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "DT",
+    "title": "The Judicious Accomplisher",
+    "geniuses": [
+      "Discernment",
+      "Tenacity"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Sensible and disciplined.",
+          "Knows exactly what needs to be done and is determined to follow through.",
+          "Possesses a unique combination of intuition and urgency.",
+          "People with this pairing get joy and energy in getting the right things done efficiently and effectively.",
+          "They place high value on productivity and are adept at identifying top priorities.",
+          "They are all about being focused and diligent, holding themselves to high standards of execution."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re committed to excellence, they might sometimes feel a bit anxious about the possibility of failure, especially when working with others who may not share their high standards."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Trust. They want you to trust their judgment, instincts, and assessment of things.",
+          "Clarity. They want deadlines and parameters. “Tell me exactly what you need, then let me do what is necessary to complete the task.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "“Prove it.” They dislike having to argue for people to believe what their gut is telling them.",
+          "Ambiguity. They dislike unclear standards and directions, or expectations that suddenly change."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "GE",
+    "title": "The Enthusiastic Encourager",
+    "geniuses": [
+      "Galvanizing",
+      "Enablement"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Energetic and supportive.",
+          "Enjoys motivating and affirming others.",
+          "Eager to provide inspiration or reassurance where needed.",
+          "People with this pairing get joy and energy by inspiring and supporting others to grow, improve, and feel good about themselves.",
+          "They’re exceedingly positive and exuberant.",
+          "They are optimistic “cheerleaders” who enjoy spreading enthusiasm."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re so keen on being positive, they might sometimes be a bit quick to affirm or offer unwarranted praise, which could lead others to dismiss them as overly optimistic or insincere."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Reaction. They want engagement, and confirmation that the thing they are advocating for is real and worthwhile.",
+          "Appreciation. They want to be acknowledged for their inherent value, but they are not necessarily seeking recognition, attention, or credit. “That made a big difference. You really helped.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Apathy. They hate it when no one responds to their calls to action, or when their enthusiasm is met with silence.",
+          "Being overlooked. They dislike it when their efforts are taken for granted—when you don’t acknowledge that they have helped, or if you ignore the impact of their work."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "GT",
+    "title": "The Assertive Driver",
+    "geniuses": [
+      "Galvanizing",
+      "Tenacity"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Disciplined and bold.",
+          "Confidently rallies others to take action.",
+          "Derives energy from eliminating obstacles and getting things done.",
+          "People with this pairing get joy and energy in not just getting things done but also rallying others to join them.",
+          "They are go-getters who don’t mind bulldozing through obstacles.",
+          "They are fine with bending social rules if it means pushing projects through to completion."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re so focused on action, they might come off as pushy or uncaring."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Reaction. They want engagement, and confirmation that the thing they are advocating for is real and worthwhile.",
+          "Clarity. They want deadlines and parameters. “Tell me exactly what you need, then let me do what is necessary to complete the task.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Apathy. They hate it when no one responds to their calls to action, or when their enthusiasm is met with silence.",
+          "Ambiguity. They dislike unclear standards and directions, or expectations that suddenly change."
+        ]
+      }
+    ]
+  },
+  {
+    "pairing": "ET",
+    "title": "The Loyal Finisher",
+    "geniuses": [
+      "Enablement",
+      "Tenacity"
+    ],
+    "sections": [
+      {
+        "heading": "Highlights",
+        "content": [
+          "Responsive and dependable.",
+          "Enjoys helping others and getting things done.",
+          "Quick to volunteer and determined to fulfill commitments and achieve goals.",
+          "People with this pairing get joy and energy by checking off tasks and responding to the needs of others.",
+          "They are quick to help, and they value being reliable and responsive.",
+          "They are low-maintenance contributors who always hold themselves accountable for delivering on their promises."
+        ]
+      },
+      {
+        "heading": "Potential Challenges",
+        "content": [
+          "Because they’re so responsible and eager to help, they might find it hard to say ‘no’ to requests.",
+          "This can sometimes lead them to be over-committed, and prone to burnout or feeling underappreciated."
+        ]
+      },
+      {
+        "heading": "They Crave",
+        "content": [
+          "Appreciation. They want to be acknowledged for their inherent value, but they are not necessarily seeking recognition, attention, or credit. “That made a big difference. You really helped.”",
+          "Clarity. They want deadlines and parameters. “Tell me exactly what you need, then let me do what is necessary to complete the task.”"
+        ]
+      },
+      {
+        "heading": "They Are Crushed By",
+        "content": [
+          "Being overlooked. They dislike it when their efforts are taken for granted—when you don’t acknowledge that they have helped, or if you ignore the impact of their work.",
+          "Ambiguity. They dislike unclear standards and directions, or expectations that suddenly change."
+        ]
+      }
+    ]
+  }
+]
