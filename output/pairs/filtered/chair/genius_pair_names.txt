@@ -1,0 +1,7 @@
+Filter: chair
+Number of Profiles: 4
+Profiles:
+- Matthew Belanger
+- Dana Cavers
+- Domenic Thachuk
+- Felicity Cincurak

@@ -1,0 +1,15 @@
+Filter: team
+Number of Profiles: 12
+Profiles:
+- Clara Mati
+- Damian Cincurak
+- Emily Kowalsky
+- Jenna Goldsack
+- Julia Giammaria
+- Krista Mati
+- Sabin James
+- Tristan Wiley
+- Brandon Benoit
+- Katie D'Hondt
+- Mitchell Witteveen
+- Monica Plante

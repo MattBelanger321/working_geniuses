@@ -1,0 +1,13 @@
+Filter: male
+Number of Profiles: 10
+Profiles:
+- Matthew Belanger
+- Damian Cincurak
+- Joshua Rodrigo
+- Nicholas Orsik
+- Sabin James
+- Tristan Wiley
+- Bashar Zori
+- Brandon Benoit
+- Domenic Thachuk
+- Mitchell Witteveen

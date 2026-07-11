@@ -86,32 +86,6 @@ def should_filter_profile(profile, filter):
         raise ValueError(f"Unknown filter: {filter}")
 
 
-def plot_genius_distribution(filter=None):
-    """
-    Plot the distribution of geniuses by their field of expertise.
-    """
-
-    genius_counts = {genius_name: 0 for genius_name in geniuses.keys()}
-
-    for name, profile in profiles.items():
-        if should_filter_profile(profile, filter):
-            continue
-        print(f"Analyzing profile: {name}")
-        for genius_name in geniuses.keys():
-            if genius_name in profile['genius']:
-                genius_counts[genius_name] += 1
-
-    plt.figure(figsize=(10, 6))
-    plt.bar(genius_counts.keys(), genius_counts.values(), color='green')
-    plt.xlabel('Genius Name')
-    plt.ylabel('Number of Profiles')
-    plt.title('Distribution of Geniuses by Number of Profiles')
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.savefig(f'{OUTPUT_DIR}genius_distribution.png')
-    plt.show()
-
-
 def plot_genius_distribution(filter=None, subdir=""):
     """
     Plot the distribution of geniuses by their field of expertise.
@@ -138,7 +112,14 @@ def plot_genius_distribution(filter=None, subdir=""):
         counts = {genius_name: genius_counts[genius_name][pos]
                   for genius_name in genius_counts}
         plt.figure(figsize=(10, 6))
-        plt.bar(counts.keys(), counts.values(), color='green')
+        bars = plt.bar(counts.keys(), counts.values(), color='green')
+        plt.bar_label(
+            bars,
+            labels=[
+                f"{count / profile_count:.1%}" if profile_count > 0 else "0%"
+                for count in counts.values()
+            ]
+        )
         plt.xlabel('Genius Name')
         plt.ylabel('Number of Profiles')
         plt.title(
@@ -180,7 +161,15 @@ def plot_competency_distribution(filter=None, subdir=""):
                   for genius_name in competency_counts}
 
         plt.figure(figsize=(10, 6))
-        plt.bar(counts.keys(), counts.values(), color='orange')
+        bars = plt.bar(counts.keys(), counts.values(), color='orange')
+        plt.bar_label(
+            bars,
+            labels=[
+                f"{count / profile_count:.1%}" if profile_count > 0 else "0%"
+                for count in counts.values()
+            ]
+        )
+
         plt.xlabel('Competency Name')
         plt.ylabel('Number of Profiles')
         plt.title(
@@ -227,7 +216,14 @@ def plot_frustration_distribution(filter=None, subdir=""):
                   for genius_name in frustration_counts}
 
         plt.figure(figsize=(10, 6))
-        plt.bar(counts.keys(), counts.values(), color='red')
+        bars = plt.bar(counts.keys(), counts.values(), color='red')
+        plt.bar_label(
+            bars,
+            labels=[
+                f"{count / profile_count:.1%}" if profile_count > 0 else "0%"
+                for count in counts.values()
+            ]
+        )
         plt.xlabel('Frustration Name')
         plt.ylabel('Number of Profiles')
         plt.title(
@@ -263,11 +259,182 @@ def write_filter_summary(filter, subdir=""):
             f.write(f'- {name}\n')
 
 
+def plot_genius_pair_distribution(filter=None, subdir=""):
+    """
+    Plot the distribution of genius pairs by their field of expertise.
+    """
+
+    pair_counts = {}
+    profile_count = 0
+
+    for name, profile in profiles.items():
+        if should_filter_profile(profile, filter):
+            continue
+        print(f"Analyzing profile: {name}")
+        for pair in genius_pairs:
+            pair_name = f"{profile['genius'][0][0]}{profile['genius'][1][0]}"
+            if pair_name in pair["pairing"] or pair_name[::-1] in pair["pairing"]:
+                if pair_name not in pair_counts and pair_name[::-1] not in pair_counts:
+                    # If the pair is found, initialize the count for the pair
+                    if pair_name in pair["pairing"]:
+                        pair_counts[pair_name] = 0
+                    else:  # If the reverse pair is found, initialize the count for the reverse pair
+                        pair_counts[pair_name[::-1]] = 0
+                if pair_name in pair_counts:  # If the pair is found, increment the count for the pair
+                    pair_counts[pair_name] += 1
+                else:  # If the reverse pair is found, increment the count for the reverse pair
+                    pair_counts[pair_name[::-1]] += 1
+                break  # If pair is found, no need to check other pairs for this profile
+        profile_count += 1
+
+    plt.figure(figsize=(10, 6))
+    bars = plt.bar(pair_counts.keys(), pair_counts.values(), color='green')
+    plt.bar_label(
+        bars,
+        labels=[
+            f"{count / profile_count:.1%}" if profile_count > 0 else "0%"
+            for count in pair_counts.values()
+        ]
+    )
+    plt.xlabel('Genius Pair Name')
+    plt.ylabel('Number of Profiles')
+    plt.title(
+        f'Distribution of Genius Pairs by Number of Profiles ({profile_count}) - {filter if filter else "All"}'
+    )
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    os.makedirs(f'{OUTPUT_DIR}{subdir}', exist_ok=True)
+    plt.savefig(f'{OUTPUT_DIR}{subdir}genius_pair_distribution.png')
+
+
+def plot_competency_pair_distribution(filter=None, subdir=""):
+    """
+    Plot the distribution of competency pairs by their field of expertise.
+    """
+
+    pair_counts = {}
+    profile_count = 0
+
+    for name, profile in profiles.items():
+        if should_filter_profile(profile, filter):
+            continue
+        print(f"Analyzing profile: {name}")
+        for pair in genius_pairs:
+
+            pair_name = f"{profile['competency'][0][0]}{profile['competency'][1][0]}"
+
+            if pair_name in pair["pairing"] or pair_name[::-1] in pair["pairing"]:
+                if pair_name not in pair_counts and pair_name[::-1] not in pair_counts:
+                    # If the pair is found, initialize the count for the pair
+                    if pair_name in pair["pairing"]:
+                        pair_counts[pair_name] = 0
+                    else:  # If the reverse pair is found, initialize the count for the reverse pair
+                        pair_counts[pair_name[::-1]] = 0
+                if pair_name in pair_counts:  # If the pair is found, increment the count for the pair
+                    pair_counts[pair_name] += 1
+                else:  # If the reverse pair is found, increment the count for the reverse pair
+                    pair_counts[pair_name[::-1]] += 1
+                break  # If pair is found, no need to check other pairs for this profile
+        profile_count += 1
+
+    plt.figure(figsize=(10, 6))
+    bars = plt.bar(pair_counts.keys(), pair_counts.values(), color='green')
+    plt.bar_label(
+        bars,
+        labels=[
+            f"{count / profile_count:.1%}" if profile_count > 0 else "0%"
+            for count in pair_counts.values()
+        ]
+    )
+    plt.xlabel('Competency Pair Name')
+    plt.ylabel('Number of Profiles')
+    plt.title(
+        f'Distribution of Competency Pairs by Number of Profiles ({profile_count}) - {filter if filter else "All"}'
+    )
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+    os.makedirs(f'{OUTPUT_DIR}{subdir}', exist_ok=True)
+    plt.savefig(f'{OUTPUT_DIR}{subdir}competency_pair_distribution.png')
+    plt.close()
+
+
+def plot_frustration_pair_distribution(filter=None, subdir=""):
+    """
+    Plot the distribution of frustration pairs by their field of expertise.
+    """
+
+    pair_counts = {}
+    profile_count = 0
+
+    for name, profile in profiles.items():
+        if should_filter_profile(profile, filter):
+            continue
+
+        print(f"Analyzing profile: {name}")
+        for pair in genius_pairs:
+            pair_name = f"{profile['frustration'][0][0]}{profile['frustration'][1][0]}"
+            if pair_name in pair["pairing"] or pair_name[::-1] in pair["pairing"]:
+                if pair_name not in pair_counts and pair_name[::-1] not in pair_counts:
+                    # If the pair is found, initialize the count for the pair
+                    if pair_name in pair["pairing"]:
+                        pair_counts[pair_name] = 0
+                    else:  # If the reverse pair is found, initialize the count for the reverse pair
+                        pair_counts[pair_name[::-1]] = 0
+                if pair_name in pair_counts:  # If the pair is found, increment the count for the pair
+                    pair_counts[pair_name] += 1
+                else:  # If the reverse pair is found, increment the count for the reverse pair
+                    pair_counts[pair_name[::-1]] += 1
+                break  # If pair is found, no need to check other pairs for this profile
+        profile_count += 1
+
+    plt.figure(figsize=(10, 6))
+    bars = plt.bar(pair_counts.keys(), pair_counts.values(), color='red')
+    plt.bar_label(
+        bars,
+        labels=[
+            f"{count / profile_count:.1%}" if profile_count > 0 else "0%"
+            for count in pair_counts.values()
+        ]
+    )
+    plt.xlabel('Frustration Pair Name')
+    plt.ylabel('Number of Profiles')
+    plt.title(
+        f'Distribution of Frustration Pairs by Number of Profiles ({profile_count}) - {filter if filter else "All"}'
+    )
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+    os.makedirs(f'{OUTPUT_DIR}{subdir}', exist_ok=True)
+    plt.savefig(f'{OUTPUT_DIR}{subdir}frustration_pair_distribution.png')
+    plt.close()
+
+
+def write_genius_pair_summary(filter, subdir=""):
+    """
+    Write a summary of the number of profiles that match the given filter for genius pairs.
+    """
+    profile_count = 0
+    for name, profile in profiles.items():
+        if should_filter_profile(profile, filter):
+            continue
+        profile_count += 1
+
+    with open(f'{OUTPUT_DIR}{subdir}genius_pair_names.txt', 'w') as f:
+        f.write(f'Filter: {filter if filter else "All"}\n')
+        f.write(f'Number of Profiles: {profile_count}\n')
+        f.write('Profiles:\n')
+        for name, profile in profiles.items():
+            if should_filter_profile(profile, filter):
+                continue
+            f.write(f'- {name}\n')
+
+
 plot_genius_distribution(subdir="all/")
 plot_competency_distribution(subdir="all/")
 plot_frustration_distribution(subdir="all/")
 
-write_filter_summary(filter=None)
+write_filter_summary(filter=None, subdir="all/")
 
 for filter in FILTERS:
     print(f"Plotting genius distribution with filter: {filter}")
@@ -277,3 +444,21 @@ for filter in FILTERS:
     print(f"Plotting frustration distribution with filter: {filter}")
     plot_frustration_distribution(filter=filter, subdir=f"filtered/{filter}/")
     write_filter_summary(filter, subdir=f"filtered/{filter}/")
+
+
+plot_genius_pair_distribution(subdir="pairs/all/")
+plot_competency_pair_distribution(subdir="pairs/all/")
+plot_frustration_pair_distribution(subdir="pairs/all/")
+write_genius_pair_summary(filter=None, subdir="pairs/all/")
+
+for filter in FILTERS:
+    print(f"Plotting genius pair distribution with filter: {filter}")
+    plot_genius_pair_distribution(
+        filter=filter, subdir=f"pairs/filtered/{filter}/")
+    print(f"Plotting competency pair distribution with filter: {filter}")
+    plot_competency_pair_distribution(
+        filter=filter, subdir=f"pairs/filtered/{filter}/")
+    print(f"Plotting frustration pair distribution with filter: {filter}")
+    plot_frustration_pair_distribution(
+        filter=filter, subdir=f"pairs/filtered/{filter}/")
+    write_genius_pair_summary(filter, subdir=f"pairs/filtered/{filter}/")

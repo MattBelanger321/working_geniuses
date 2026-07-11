@@ -1,0 +1,8 @@
+Filter: inactive
+Number of Profiles: 5
+Profiles:
+- Emily Kowalsky
+- Jenna Goldsack
+- Julia Giammaria
+- Tristan Wiley
+- Katie D'Hondt

@@ -1,0 +1,7 @@
+Filter: bible_study_branch
+Number of Profiles: 4
+Profiles:
+- Damian Cincurak
+- Sabin James
+- Felicity Cincurak
+- Mitchell Witteveen

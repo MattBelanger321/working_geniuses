@@ -1,0 +1,10 @@
+Filter: male_role
+Number of Profiles: 7
+Profiles:
+- Matthew Belanger
+- Damian Cincurak
+- Sabin James
+- Tristan Wiley
+- Brandon Benoit
+- Domenic Thachuk
+- Mitchell Witteveen
