@@ -1,0 +1,12 @@
+Filter: female_role
+Number of Profiles: 9
+Profiles:
+- Clara Mati
+- Emily Kowalsky
+- Jenna Goldsack
+- Julia Giammaria
+- Krista Mati
+- Dana Cavers
+- Felicity Cincurak
+- Katie D'Hondt
+- Monica Plante

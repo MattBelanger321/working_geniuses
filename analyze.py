@@ -1,5 +1,6 @@
 import json
 import os
+from re import sub
 import matplotlib.pyplot as plt
 from collections import Counter
 
@@ -30,6 +31,10 @@ FILTERS = {
     "active_chair",
     "inactive_team",
     "inactive_chair",
+    "male",
+    "female",
+    "male_role",
+    "female_role"
 }
 
 
@@ -60,6 +65,14 @@ def should_filter_profile(profile, filter):
         return not (not profile.get("active", True) and profile.get("role") == "team")
     elif filter == "inactive_chair":
         return not (not profile.get("active", True) and profile.get("role") == "chair")
+    elif filter == "male":
+        return not profile.get("male", False)
+    elif filter == "female":
+        return profile.get("male", True)
+    elif filter == "male_role":
+        return not (profile.get("male", False) and profile.get("role") is not None)
+    elif filter == "female_role":
+        return not (not profile.get("male", True) and profile  .get("role") is not None)
     else:
         raise ValueError(f"Unknown filter: {filter}")
 
@@ -241,9 +254,9 @@ def write_filter_summary(filter, subdir=""):
             f.write(f'- {name}\n')
 
 
-plot_genius_distribution()
-plot_competency_distribution()
-plot_frustration_distribution()
+plot_genius_distribution(subdir="all/")
+plot_competency_distribution(subdir="all/")
+plot_frustration_distribution(subdir="all/")
 
 write_filter_summary(filter=None)
 
