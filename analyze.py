@@ -338,7 +338,7 @@ def plot_competency_pair_distribution(filter=None, subdir=""):
         profile_count += 1
 
     plt.figure(figsize=(10, 6))
-    bars = plt.bar(pair_counts.keys(), pair_counts.values(), color='green')
+    bars = plt.bar(pair_counts.keys(), pair_counts.values(), color='orange')
     plt.bar_label(
         bars,
         labels=[
