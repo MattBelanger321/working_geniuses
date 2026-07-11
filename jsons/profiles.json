@@ -3,6 +3,7 @@
 		"branch": "Community Outreach",
 		"role": "chair",
 		"active": true,
+		"male": true,
 		"genius": [
 			"Galvanizing",
 			"Wonder"
@@ -20,6 +21,7 @@
 		"branch": "Community Outreach",
 		"role": "team",
 		"active": true,
+		"male": false,
 		"genius": [
 			"Enablement",
 			"Tenacity"
@@ -37,6 +39,7 @@
 		"branch": "Bible Study",
 		"role": "team",
 		"active": true,
+		"male": true,
 		"genius": [
 			"Enablement",
 			"Galvanizing"
@@ -54,6 +57,7 @@
 		"branch": "Theology on Tap",
 		"role": "team",
 		"active": false,
+		"male": false,
 		"genius": [
 			"Enablement",
 			"Tenacity"
@@ -71,6 +75,7 @@
 		"branch": "Theology on Tap",
 		"role": "team",
 		"active": false,
+		"male": false,
 		"genius": [
 			"Enablement",
 			"Wonder"
@@ -85,6 +90,7 @@
 		]
 	},
 	"Joshua Rodrigo": {
+		"male": true,
 		"genius": [
 			"Wonder",
 			"Tenacity"
@@ -101,6 +107,7 @@
 	"Julia Giammaria": {
 		"branch": "Theology on Tap",
 		"role": "team",
+		"male": false,
 		"active": false,
 		"genius": [
 			"Galvanizing",
@@ -118,6 +125,7 @@
 	"Krista Mati": {
 		"branch": "Social Media",
 		"role": "team",
+		"male": false,
 		"active": true,
 		"genius": [
 			"Tenacity",
@@ -133,6 +141,7 @@
 		]
 	},
 	"Nicholas Orsik": {
+		"male": true,
 		"genius": [
 			"Tenacity",
 			"Wonder"
@@ -149,6 +158,7 @@
 	"Sabin James": {
 		"branch": "Bible Study",
 		"role": "team",
+		"male": true,
 		"active": true,
 		"genius": [
 			"Galvanizing",
@@ -166,6 +176,7 @@
 	"Tristan Wiley": {
 		"branch": "Theology on Tap",
 		"role": "team",
+		"male": true,
 		"active": false,
 		"genius": [
 			"Invention",
@@ -181,6 +192,7 @@
 		]
 	},
 	"Zoe G": {
+		"male": false,
 		"genius": [
 			"Wonder",
 			"Invention"
@@ -195,6 +207,7 @@
 		]
 	},
 	"Bashar Zori": {
+		"male": true,
 		"genius": [
 			"Wonder",
 			"Discernment"
@@ -211,6 +224,7 @@
 	"Brandon Benoit": {
 		"branch": "Theology on Tap",
 		"role": "team",
+		"male": true,
 		"active": true,
 		"genius": [
 			"Tenacity",
@@ -226,6 +240,7 @@
 		]
 	},
 	"Carolyne A": {
+		"male": false,
 		"genius": [
 			"Tenacity",
 			"Wonder"
@@ -240,6 +255,7 @@
 		]
 	},
 	"Chelsea Thachuk": {
+		"male": false,
 		"genius": [
 			"Enablement",
 			"Wonder"
@@ -256,6 +272,7 @@
 	"Dana Cavers": {
 		"branch": "Theology on Tap",
 		"role": "chair",
+		"male": false,
 		"active": true,
 		"genius": [
 			"Invention",
@@ -273,6 +290,7 @@
 	"Domenic Thachuk": {
 		"branch": "Community Outreach",
 		"role": "chair",
+		"male": true,
 		"active": true,
 		"genius": [
 			"Wonder",
@@ -290,13 +308,14 @@
 	"Felicity Cincurak": {
 		"branch": "Bible Study",
 		"role": "chair",
+		"male": false,
 		"active": true,
 		"genius": [
 			"Enablement",
-			"Wonder"
+			"Discernment"
 		],
 		"competency": [
-			"Discernment",
+			"Wonder",
 			"Tenacity"
 		],
 		"frustration": [
@@ -305,6 +324,7 @@
 		]
 	},
 	"Isabella B": {
+		"male": false,
 		"genius": [
 			"Invention",
 			"Enablement"
@@ -319,6 +339,7 @@
 		]
 	},
 	"Jaclyn Sleiman": {
+		"male": false,
 		"genius": [
 			"Enablement",
 			"Tenacity"
@@ -333,6 +354,7 @@
 		]
 	},
 	"Jessica Rodrigo": {
+		"male": false,
 		"genius": [
 			"Wonder",
 			"Tenacity"
@@ -347,6 +369,7 @@
 		]
 	},
 	"Katie D'Hondt": {
+		"male": false,
 		"branch": "Community Outreach",
 		"role": "team",
 		"active": false,
@@ -364,6 +387,7 @@
 		]
 	},
 	"Katie Jacobs": {
+		"male": false,
 		"genius": [
 			"Galvanizing",
 			"Enablement"
@@ -378,6 +402,7 @@
 		]
 	},
 	"Laurette Witteveen": {
+		"male": false,
 		"genius": [
 			"Enablement",
 			"Tenacity"
@@ -392,6 +417,7 @@
 		]
 	},
 	"Lynora Kajoja": {
+		"male": false,
 		"genius": [
 			"Enablement",
 			"Wonder"
@@ -406,6 +432,7 @@
 		]
 	},
 	"Mitchell Witteveen": {
+		"male": true,
 		"branch": "Bible Study",
 		"role": "team",
 		"active": true,
@@ -423,6 +450,7 @@
 		]
 	},
 	"Monica Plante": {
+		"male": false,
 		"branch": "Theology on Tap",
 		"role": "team",
 		"active": true,
