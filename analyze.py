@@ -4,6 +4,8 @@ from re import sub
 import matplotlib.pyplot as plt
 from collections import Counter
 
+from matplotlib.ticker import MaxNLocator
+
 OUTPUT_DIR = "output/"
 
 PROFILES = "jsons/profiles.json"
@@ -125,6 +127,7 @@ def plot_genius_distribution(filter=None, subdir=""):
         plt.title(
             f'Distribution of Geniuses by Number of Profiles ({profile_count}) - {pos}: {filter if filter else "All"}')
         plt.xticks(rotation=45)
+        plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
         plt.tight_layout()
         os.makedirs(f'{OUTPUT_DIR}{subdir}{pos}', exist_ok=True)
         plt.savefig(f'{OUTPUT_DIR}{subdir}{pos}/genius_distribution_{pos}.png')
@@ -176,6 +179,7 @@ def plot_competency_distribution(filter=None, subdir=""):
             f'Distribution of Competencies by Number of Profiles ({profile_count}) - {pos}: {filter if filter else "All"}'
         )
         plt.xticks(rotation=45)
+        plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
         plt.tight_layout()
 
         os.makedirs(f'{OUTPUT_DIR}{subdir}{pos}', exist_ok=True)
@@ -230,6 +234,7 @@ def plot_frustration_distribution(filter=None, subdir=""):
             f'Distribution of Frustrations by Number of Profiles ({profile_count}) - {pos}: {filter if filter else "All"}'
         )
         plt.xticks(rotation=45)
+        plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
         plt.tight_layout()
 
         os.makedirs(f'{OUTPUT_DIR}{subdir}{pos}', exist_ok=True)
@@ -273,17 +278,11 @@ def plot_genius_pair_distribution(filter=None, subdir=""):
         print(f"Analyzing profile: {name}")
         for pair in genius_pairs:
             pair_name = f"{profile['genius'][0][0]}{profile['genius'][1][0]}"
+            # should only run the first iteration of the parent loop
+            if pair["pairing"] not in pair_counts and pair["pairing"][::-1] not in pair_counts:
+                pair_counts[pair["pairing"]] = 0
             if pair_name in pair["pairing"] or pair_name[::-1] in pair["pairing"]:
-                if pair_name not in pair_counts and pair_name[::-1] not in pair_counts:
-                    # If the pair is found, initialize the count for the pair
-                    if pair_name in pair["pairing"]:
-                        pair_counts[pair_name] = 0
-                    else:  # If the reverse pair is found, initialize the count for the reverse pair
-                        pair_counts[pair_name[::-1]] = 0
-                if pair_name in pair_counts:  # If the pair is found, increment the count for the pair
-                    pair_counts[pair_name] += 1
-                else:  # If the reverse pair is found, increment the count for the reverse pair
-                    pair_counts[pair_name[::-1]] += 1
+                pair_counts[pair["pairing"]] += 1
                 break  # If pair is found, no need to check other pairs for this profile
         profile_count += 1
 
@@ -302,6 +301,7 @@ def plot_genius_pair_distribution(filter=None, subdir=""):
         f'Distribution of Genius Pairs by Number of Profiles ({profile_count}) - {filter if filter else "All"}'
     )
     plt.xticks(rotation=45)
+    plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
     plt.tight_layout()
     os.makedirs(f'{OUTPUT_DIR}{subdir}', exist_ok=True)
     plt.savefig(f'{OUTPUT_DIR}{subdir}genius_pair_distribution.png')
@@ -322,18 +322,11 @@ def plot_competency_pair_distribution(filter=None, subdir=""):
         for pair in genius_pairs:
 
             pair_name = f"{profile['competency'][0][0]}{profile['competency'][1][0]}"
-
+            # should only run the first iteration of the parent loop
+            if pair["pairing"] not in pair_counts and pair["pairing"][::-1] not in pair_counts:
+                pair_counts[pair["pairing"]] = 0
             if pair_name in pair["pairing"] or pair_name[::-1] in pair["pairing"]:
-                if pair_name not in pair_counts and pair_name[::-1] not in pair_counts:
-                    # If the pair is found, initialize the count for the pair
-                    if pair_name in pair["pairing"]:
-                        pair_counts[pair_name] = 0
-                    else:  # If the reverse pair is found, initialize the count for the reverse pair
-                        pair_counts[pair_name[::-1]] = 0
-                if pair_name in pair_counts:  # If the pair is found, increment the count for the pair
-                    pair_counts[pair_name] += 1
-                else:  # If the reverse pair is found, increment the count for the reverse pair
-                    pair_counts[pair_name[::-1]] += 1
+                pair_counts[pair["pairing"]] += 1
                 break  # If pair is found, no need to check other pairs for this profile
         profile_count += 1
 
@@ -352,6 +345,7 @@ def plot_competency_pair_distribution(filter=None, subdir=""):
         f'Distribution of Competency Pairs by Number of Profiles ({profile_count}) - {filter if filter else "All"}'
     )
     plt.xticks(rotation=45)
+    plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
     plt.tight_layout()
 
     os.makedirs(f'{OUTPUT_DIR}{subdir}', exist_ok=True)
@@ -374,17 +368,11 @@ def plot_frustration_pair_distribution(filter=None, subdir=""):
         print(f"Analyzing profile: {name}")
         for pair in genius_pairs:
             pair_name = f"{profile['frustration'][0][0]}{profile['frustration'][1][0]}"
+            # should only run the first iteration of the parent loop
+            if pair["pairing"] not in pair_counts and pair["pairing"][::-1] not in pair_counts:
+                pair_counts[pair["pairing"]] = 0
             if pair_name in pair["pairing"] or pair_name[::-1] in pair["pairing"]:
-                if pair_name not in pair_counts and pair_name[::-1] not in pair_counts:
-                    # If the pair is found, initialize the count for the pair
-                    if pair_name in pair["pairing"]:
-                        pair_counts[pair_name] = 0
-                    else:  # If the reverse pair is found, initialize the count for the reverse pair
-                        pair_counts[pair_name[::-1]] = 0
-                if pair_name in pair_counts:  # If the pair is found, increment the count for the pair
-                    pair_counts[pair_name] += 1
-                else:  # If the reverse pair is found, increment the count for the reverse pair
-                    pair_counts[pair_name[::-1]] += 1
+                pair_counts[pair["pairing"]] += 1
                 break  # If pair is found, no need to check other pairs for this profile
         profile_count += 1
 
@@ -402,6 +390,7 @@ def plot_frustration_pair_distribution(filter=None, subdir=""):
     plt.title(
         f'Distribution of Frustration Pairs by Number of Profiles ({profile_count}) - {filter if filter else "All"}'
     )
+    plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
     plt.xticks(rotation=45)
     plt.tight_layout()
 
